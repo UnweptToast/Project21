@@ -38,6 +38,9 @@ function draw() {
     
     if(hasCollided(bullet,bulletBlocker) === true) {
         wall.shapeColor = color(255,0,0);
+        text("Speed: " + speed, (width * 3/4), 50);
+        text("Wall thickness: " + thickness, (width * 1/4), 50);
+        text("Bullet Weight: " + weight, (width * 2/4), 50)
     }
 
     drawSprites();
